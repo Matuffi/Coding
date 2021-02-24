@@ -8,31 +8,25 @@ public class kt_5_1 {
 
         Scanner scan = new Scanner(new File("M:/Coding/Java/Moodle/Osa_nr5/andmebaas.txt"));
 
-        String[][] raamat = new String[1][5];
-        int lehekulgedeArv = 1;
+        String[][] raamat = new String[1][5], ajutineRaamat;
+
+        int a = 0;
 
         while(scan.hasNext()){
-            String[][] ajutineRaamat = new String[lehekulgedeArv][raamat[lehekulgedeArv - 1].length + 1];
+            
+            raamat[raamat.length - 1][a] = scan.nextLine();
+            a++;
 
-            for(int i = 0; i < raamat.length; i++){
-                for(int j = 0; j < raamat[i].length; j++){
-                    ajutineRaamat[i][j] = raamat[i][j];
-                }  
-            }
-            ajutineRaamat[lehekulgedeArv - 1][ajutineRaamat[lehekulgedeArv - 1].length - 1] = scan.nextLine();
+            if(a == 5){
+                a = 0;
 
-            if(ajutineRaamat[lehekulgedeArv - 1].length == 5){
-                lehekulgedeArv++;
+                ajutineRaamat = new String[raamat.length + 1][5];
 
-                raamat = new String[lehekulgedeArv + 1][ajutineRaamat[lehekulgedeArv - 1].length + 1];
-
-                for(int m = 0; m < ajutineRaamat.length; m++){
-                    for(int n = 0; n < ajutineRaamat[m].length; n++){
-                        raamat[m][n] = ajutineRaamat[m][n];
-                    }  
-                }                
-            }
-            else{
+                for(int i = 0; i < raamat.length; i++){
+                    for(int j = 0; j < 5; j++){
+                        ajutineRaamat[i][j] = raamat[i][j];
+                    }
+                }
                 raamat = ajutineRaamat;
             }
         }
