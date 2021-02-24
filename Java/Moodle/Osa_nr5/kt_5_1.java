@@ -7,8 +7,6 @@ public class kt_5_1 {
 
         String[] andmed = new String[0];
         Scanner scan = new Scanner(new File("M:/Coding/Java/Moodle/Osa_nr5/andmebaas.txt"));
-        double andmeid;
-        int lehekulgedeArv;
 
         while(scan.hasNext()){
             String ajutineJarjend[] = new String[andmed.length + 1];
@@ -19,11 +17,7 @@ public class kt_5_1 {
             andmed = ajutineJarjend;
         }
 
-        andmeid = andmed.length;
-        lehekulgedeArv = (int) Math.ceil(andmeid / 5);
-
         System.out.println("See andmekogu koosneb mängu Counter Strike Global Offensive'i mängijate taustast. Hoiame mängija nime, SteamID'd, tiimi nime, mängusisest auastet, võidetud mängude arvu, mängule kulutatud aega ning viimase mängusessiooni kuupäeva.");
-        System.out.println(lehekulgedeArv);
 
         while(true){
             break;
