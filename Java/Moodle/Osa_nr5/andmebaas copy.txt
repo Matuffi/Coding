@@ -1,0 +1,21 @@
+Juan ess            #2894506            #-                  #Silver IV                          #57            #302           #24/02/2021
+mcbitch             #5703029            #Anomaly            #Silver I                           #10            #9             #23/02/2021
+Drew                #9358825            #Na´Vi              #Distinguished Master Guardian      #86            #430           #20/02/2021
+carter              #0894993            #Arsenaal           #Master Guardian I                  #88            #486           #25/02/2021
+Kodak               #9473282            #-                  #Silver II                          #52            #286           #25/02/2021
+Livid               #0149372            #Atomic             #Silver III                         #66            #504           #13/01/2021
+Marz                #6361000            #-                  #Gold Nova Master                   #71            #462           #21/02/2021
+lol                 #5339345            #-                  #Global Elite                       #583           #5482          #25/02/2021
+PiggyCrensh         #9595573            #DeltaForce         #Gold Nova III                      #46            #335           #14/12/2020
+Haskal              #7696146            #G.SE               #Legendary Eagle Master             #157           #794           #25/02/2021
+Lumos               #7635007            #-                  #Gold Nova II                       #100           #630           #16/02/2021
+McGun               #1974874            #FerrariPeek        #Legendary Eagle                    #129           #2723          #24/02/2021
+Ron Weasley         #6385324            #ROBOTAIM           #Global Elite                       #361           #4215          #25/02/2021
+Somebody            #4910564            #-                  #Silver III                         #52            #393           #04/06/2019
+kreate              #7127714            #-                  #Gold Nova II                       #95            #621           #05/02/2021
+Invader Sim         #8071596            #-                  #Silver Elite                       #35            #326           #14/11/2020
+
+nimi                #SteamId            #TiimiNimi          #Auaste             #VõidetudMängudeArv         #MängitudAegTundides          #ViimatiMängis
+
+See andmekogu koosneb mängu Counter Strike Global Offensive'i mängijate taustast. Hoiame mängija nime, SteamID'd, tiimi nime, mängusisest auastet, võidetud mängude arvu, mängule kulutatud aega ning viimase mängusessiooni kuupäeva.s
+
