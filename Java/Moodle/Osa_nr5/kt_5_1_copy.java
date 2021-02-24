@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class kt_5_1 {
+public class kt_5_1_copy {
     public static void main(String[] args) throws FileNotFoundException{
 
 
