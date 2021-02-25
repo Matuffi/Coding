@@ -17,5 +17,4 @@ Invader Sim         #8071596            #-                  #Silver Elite       
 
 nimi                #SteamId            #TiimiNimi          #Auaste             #VõidetudMängudeArv         #MängitudAegTundides          #ViimatiMängis
 
-See andmekogu koosneb mängu Counter Strike Global Offensive'i mängijate taustast. Hoiame mängija nime, SteamID'd, tiimi nime, mängusisest auastet, võidetud mängude arvu, mängule kulutatud aega ning viimase mängusessiooni kuupäeva.s
-
+See andmekogu koosneb mängu Counter Strike Global Offensive'i mängijate taustast. Hoiame mängija nime, SteamID'd, tiimi nime, mängusisest auastet, võidetud mängude arvu, mängule kulutatud aega ning viimase mängusessiooni kuupäeva.
