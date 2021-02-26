@@ -5,13 +5,16 @@ import java.util.Scanner;
 
 public class kt_5_2 {
     public static void main(String[] args) throws FileNotFoundException{
+        
+        // Kasutaja sisend ning faili kirjutamine
         Scanner scan = new Scanner(System.in);
-
         FileOutputStream fos = new FileOutputStream("M:/Coding/Java/Moodle/Osa_nr5/andmebaas.txt", true);
         PrintWriter writer = new PrintWriter(fos);
 
+        // Mängija objekt
         Mangija man = new Mangija();
 
+        // Küsib kasutajalt infot
         System.out.print("Sisestage m2ngija nimi: ");
         man.nimi = scan.nextLine();
 
@@ -33,21 +36,27 @@ public class kt_5_2 {
         System.out.print("Sisestage, millal m2ngija viimati m2ngis (dd/mm/yyyy): ");
         man.viimatiMangis = scan.nextLine();
 
+        // Kontroll ennem faili kirjutamist
         System.out.printf("\nKontrollige andmed yle\n\n%s #%d ; Tiim - %s ; Auaste - %s ; On v6itnud %d m2ngu ; CS:GO'd on m2nginud %d tundi ; Viimati m2ngis %s\n\n\"J\" - sisesta andmebaasi | \"E\" - hylga andmed\n\n", man.nimi, man.steamId, man.tiimiNimi, man.auaste, man.voidetudMangud, man.mangitudAeg, man.viimatiMangis);
 
         String vastus = scan.next();
 
+        // Kirjutab info faili vormistatult
         if(vastus.toLowerCase().equals("j")){
             writer.printf("\n%s#%d#%s#%s#%d#%d#%s", man.nimi, man.steamId, man.tiimiNimi, man.auaste, man.voidetudMangud, man.mangitudAeg, man.viimatiMangis);
         }
+        // Niikuinii väljutakse programmist
         else if(vastus.toLowerCase().equals("e")){
+            // ?
         }
        
+        // Sulgeb sisend ja väljundvoo
         writer.close();
         scan.close();
 
     }
 
+    // Muutujatega objekt
     public static class Mangija {
         String nimi;
         int steamId;

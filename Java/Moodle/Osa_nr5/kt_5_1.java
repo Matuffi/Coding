@@ -5,47 +5,59 @@ import java.util.Scanner;
 public class kt_5_1 {
     public static void main(String[] args) throws FileNotFoundException{
 
-
+        // Avab faili ning loob kaks array'd. Array iseloomustab raamatut Array[{Lehekülg}][{Lehel olev rida}]. Loob muutuja a, mis loeb lehekülgede arvu.
         Scanner file = new Scanner(new File("andmebaas.txt"));
-
         String[][] raamat = new String[1][5], ajutineRaamat;
-
         int a = 0;
 
+        // LeheküljeIndeks näitab hetkel kuvatavat lehekülge. Loome ka kasutaja sisendivoo ning selle jaoks ka muutuja
+        int lehekuljeIndeks = 0;
+        Scanner scan = new Scanner(System.in);
+        String kask;
+
+        // Kui failis on veel teksti
         while(file.hasNext()){
             
+            // Kirjutab raamatu array viimasele lehele viimasele reale failist rea ning suurendab ridade muutujat
             raamat[raamat.length - 1][a] = file.nextLine();
             a++;
 
+            // Kui ridu on viis ehk üks lehekülg on täis
+            // Järgmine loogika võimaldab lisada kuipalju tahes lehekülgi
             if(a == 5){
                 a = 0;
 
+                // Teeb ajutise raamatu array, mis on päris raamatust lehekülje võrra suurem
                 ajutineRaamat = new String[raamat.length + 1][5];
 
+                // Tõstab päris raamatust iga lehekülje info ajutisse
                 for(int i = 0; i < raamat.length; i++){
                     for(int j = 0; j < 5; j++){
                         ajutineRaamat[i][j] = raamat[i][j];
                     }
                 }
+
+                // Asendab päris raamatu ajutisega
+                // Tulemuseks tegi raamatule 1 lehekülje juurde
                 raamat = ajutineRaamat;
             }
         }
 
         
-
-        int lehekuljeIndeks = 0;
-        Scanner scan = new Scanner(System.in);
-        String kask;
-
+        // Kasutaja võib lõpmata kaua lehekülgi vahetada
         while(true){
 
+            // Andmekogu info
             System.out.printf("\n\n\n\n\n\n\n\nSee andmekogu koosneb m2ngu Counter Strike Global Offensive'i m2ngijate taustast. Hoiame m2ngija nime, SteamID'd, tiimi nime, m2ngusisest auastet, v6idetud m2ngude arvu, m2ngule kulutatud aega ning viimase m2ngusessiooni kuup2eva.\n\nLehekylg %d/%d\n\n", lehekuljeIndeks + 1, raamat.length);
 
+            // Kirjutab lehekülje 5 rida leheküljeIndeksit jälgides (default 0)
             for(int n = 0; n < 5; n++){
 
+                // Kui reas puudub tekst, siis kirjutab tühja rea
                 if(raamat[lehekuljeIndeks][n] == null){
                     System.out.printf("%d.\n", lehekuljeIndeks * 5 + n + 1);
                 }
+                // Annab rea stringi uuele Mangija objektile, mis automaatselt täidab oma muutujad stringi järgi ning väljastab ühe rea ekraanile koos järjekorranumbriga
                 else{
                     Mangija man = new Mangija(raamat[lehekuljeIndeks][n]);
 
@@ -53,16 +65,20 @@ public class kt_5_1 {
                 }
             }
 
+            // Kasutaja sisendi võimalused
             System.out.printf("\nJ2rgmine - \"J\" ; Eelmine - \"E\" ; V2lju - \"V\"\n");
 
             kask = scan.next();
 
+            // Lehekülg edasi
             if(kask.toLowerCase().equals("j") && lehekuljeIndeks + 1 < raamat.length){
                 lehekuljeIndeks++;
             }
+            // Lehekülg tagasi
             else if(kask.toLowerCase().equals("e") && lehekuljeIndeks > 0){
                 lehekuljeIndeks--;
             }
+            // Väljub kordusest
             else if(kask.toLowerCase().equals("v")){
                 break;
             }
@@ -81,10 +97,12 @@ public class kt_5_1 {
         int mangitudAeg;
         String viimatiMangis;
 
+        // Constructor
         public Mangija(){
         }
 
         public Mangija(String info){
+            // Teeb stringi arrayks ning annab muutujatele väärtused
             String[] infoArr = info.split("#");
 
             this.nimi = infoArr[0];
