@@ -8,7 +8,7 @@ public class kt_5_2 {
         
         // Kasutaja sisend ning faili kirjutamine
         Scanner scan = new Scanner(System.in);
-        FileOutputStream fos = new FileOutputStream("M:/Coding/Java/Moodle/Osa_nr5/andmebaas.txt", true);
+        FileOutputStream fos = new FileOutputStream("andmebaas.txt", true);
         PrintWriter writer = new PrintWriter(fos);
 
         // Mängija objekt
