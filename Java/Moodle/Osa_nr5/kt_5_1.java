@@ -5,6 +5,17 @@ import java.util.Scanner;
 public class kt_5_1 {
     public static void main(String[] args) throws FileNotFoundException{
 
+        /*
+            NB!  *need on hilisemad märkused*
+
+            Oleksin võinud kasutada mingisugust objekti array'd nagu "Mangija[]", kuhu salvestan iga rea andmebaasist. 
+            Väljastuseks oleksin sellisel jugul kasutada saanud for loopi, mille tulemusel tuleks Mangija[] indesid alates 'leheküljeIndeks*5 - 5' kuni 'leheküljeIndeks*5'.
+            
+            Kirjutamise hetkel aga unustasin objekti kasutuse ära ning mõtlesin, et selline lahendus on ka huvitav, kasutades 2D arrayd kataloogina.
+             Seepärast näeb hetkene objektide kasutus imelik välja.
+
+        */
+
         // Avab faili ning loob kaks array'd. Array iseloomustab raamatut Array[{Lehekülg}][{Lehel olev rida}]. Loob muutuja a, mis loeb lehekülgede arvu.
         Scanner file = new Scanner(new File("andmebaas.txt"));
         String[][] raamat = new String[1][5], ajutineRaamat;
