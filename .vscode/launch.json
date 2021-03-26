@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch kt_6_3",
+            "request": "launch",
+            "mainClass": "kt_6_3",
+            "projectName": "Coding_507e5e4c"
+        },
+        {
+            "type": "java",
             "name": "Launch kt_6_2",
             "request": "launch",
             "mainClass": "kt_6_2",

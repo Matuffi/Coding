@@ -7,6 +7,8 @@ public class kt_6_1 {
     static Random rand = new Random();
 
     public static void main(String[] args) {
+        
+        // Loob matriksid ja väljastab need
         LooMatriksiJada();
         for(int i = 0; i < matriksid.length; i++){
             System.out.printf("%d. matriks\n\n", i + 1);
@@ -15,15 +17,18 @@ public class kt_6_1 {
 
         suurimMatriks = matriksid[0];
 
+        // Leiab suurima summaga matriksi
         for(int i = 0; i < matriksid.length - 1; i++){
             suurimMatriks = SuuremMatriks(matriksid[i], matriksid[i+1]);
         }
 
+        // Vastus
         System.out.printf("\nSuurim matriks elementide summa pooolest on: \n\n");
         ValjastaMatriks(suurimMatriks);
 
     }
 
+    // Loob matriksid avalikku muutujasse, kus iga arv on suvaline arv 0 - 100
     static void LooMatriksiJada(){
         for(int m = 0; m < matriksid.length; m++){
             for(int i = 0; i < matriksid[m].length; i++){
@@ -34,6 +39,7 @@ public class kt_6_1 {
         }
     }
 
+    // Saab matriksi ning kuvab selle ekraanile
     static void ValjastaMatriks(int[][] n){
         for(int i = 0; i < n.length; i++){
             for(int j = 0; j < n[i].length; j++){
@@ -44,6 +50,7 @@ public class kt_6_1 {
         System.out.println();
     }
 
+    // Saab kaks matriksit ning liidab elemendid kokku. Tagastab suurema matriksi
     static int[][] SuuremMatriks(int[][] a, int[][] b){
         int aSum = 0;
         int bSum = 0;
