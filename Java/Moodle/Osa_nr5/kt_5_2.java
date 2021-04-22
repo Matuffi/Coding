@@ -15,29 +15,29 @@ public class kt_5_2 {
         Mangija man = new Mangija();
 
         // Küsib kasutajalt infot
-        System.out.print("Sisestage m2ngija nimi: ");
+        System.out.print("Sisestage mängija nimi: ");
         man.nimi = scan.nextLine();
 
-        System.out.print("Sisestage m2ngija SteamId: ");
+        System.out.print("Sisestage mängija SteamId: ");
         man.steamId = Integer.parseInt(scan.nextLine());
 
-        System.out.print("Sisestage m2ngija tiimi nimi: ");
+        System.out.print("Sisestage mängija tiimi nimi: ");
         man.tiimiNimi = scan.nextLine();
 
-        System.out.print("Sisestage m2ngija auaste: ");
+        System.out.print("Sisestage mängija auaste: ");
         man.auaste = scan.nextLine();
 
-        System.out.print("Sisestage m2ngija v6idetud m2ngude arv: ");
+        System.out.print("Sisestage mängija v6idetud mängude arv: ");
         man.voidetudMangud = Integer.parseInt(scan.nextLine());
 
-        System.out.print("Sisestage, mitu tundi on m2ngija CS:GO'd m2nginud: ");
+        System.out.print("Sisestage, mitu tundi on mängija CS:GO'd mänginud: ");
         man.mangitudAeg = Integer.parseInt(scan.nextLine());
 
-        System.out.print("Sisestage, millal m2ngija viimati m2ngis (dd/mm/yyyy): ");
+        System.out.print("Sisestage, millal mängija viimati mängis (dd/mm/yyyy): ");
         man.viimatiMangis = scan.nextLine();
 
         // Kontroll ennem faili kirjutamist
-        System.out.printf("\nKontrollige andmed yle\n\n%s #%d ; Tiim - %s ; Auaste - %s ; On v6itnud %d m2ngu ; CS:GO'd on m2nginud %d tundi ; Viimati m2ngis %s\n\n\"J\" - sisesta andmebaasi | \"E\" - hylga andmed\n\n", man.nimi, man.steamId, man.tiimiNimi, man.auaste, man.voidetudMangud, man.mangitudAeg, man.viimatiMangis);
+        System.out.printf("\nKontrollige andmed yle\n\n%s #%d ; Tiim - %s ; Auaste - %s ; On v6itnud %d mängu ; CS:GO'd on mänginud %d tundi ; Viimati mängis %s\n\n\"J\" - sisesta andmebaasi | \"E\" - hylga andmed\n\n", man.nimi, man.steamId, man.tiimiNimi, man.auaste, man.voidetudMangud, man.mangitudAeg, man.viimatiMangis);
 
         String vastus = scan.next();
 
