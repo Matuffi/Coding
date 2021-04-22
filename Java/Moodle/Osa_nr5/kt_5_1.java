@@ -21,7 +21,7 @@ public class kt_5_1 {
         String[][] raamat = new String[1][5], ajutineRaamat;
         int a = 0;
 
-        // LeheküljeIndeks näitab hetkel kuvatavat lehekülge. Loome ka kasutaja sisendivoo ning selle jaoks ka muutuja
+        // LeheküljeInteks näitab hetkel kuvatavat lehekülge. Loome ka kasudaja sisendivoo ning selle jaoks ka muutuja
         int lehekuljeIndeks = 0;
         Scanner scan = new Scanner(System.in);
         String kask;
@@ -55,7 +55,7 @@ public class kt_5_1 {
         }
 
         
-        // Kasutaja võib lõpmata kaua lehekülgi vahetada
+        // Kasutaja võib lõpmada kaua lehekülgi vahetada
         while(true){
 
             // Andmekogu info
@@ -129,7 +129,7 @@ public class kt_5_1 {
 
 /*
 
-1. Juan sii - #6391038; Tiim - puudub; Global Elite; On v6itnud 531 m2ngu; CS:GO'd on m2nginud 600 tundi; Viimati m2ngis 25/02/2021
+1. Juan sii - #6391038; Tiim - Honeypot; Global Elite; On v6itnud 531 m2ngu; CS:GO'd on m2nginud 600 tundi; Viimati m2ngis 25/02/2021
 
 nimi#SteamId#TiimiNimi#Auaste#V6idetudM2ngudeArv#M2ngitudAegTundides#ViimatiM2ngis
 
