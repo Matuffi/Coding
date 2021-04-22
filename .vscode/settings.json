@@ -1,1 +1,10 @@
-{}
+{
+    "java.project.sourcePaths": [
+        "Java/Moodle/Osa_nr5",
+        "Java/Moodle/Osa_nr4",
+        "Java/Moodle/Osa_nr3",
+        "Java/Moodle/Osa_nr2",
+        "Java/Moodle/Osa_nr1",
+        "Java/Moodle/Osa_nr6"
+    ]
+}
